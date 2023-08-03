@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            display: grid;
+            gap: 0%;
+            grid-template-areas:
+
+                "nav-bar nav-bar nav-bar"
+                "side-bar content-1 content-1"
+                "side-bar content-1 content-1"
+                "side-bar content-1 content-1"
+                "side-bar content-1 content-1"
+                "footer-1 footer-1 footer-1";
+        }
+
+
+        .item1 {
+            background-color: crimson;
+        }
+
+        .navbar {
+            grid-area: nav-bar;
+            background-color: rgb(104, 105, 102);
+            width: 100%;
+            height: 70px;
+        
+
+        }
+
+        .sidebar-1 {
+            grid-area: side-bar;
+            background-color: rgb(243, 142, 181);
+            width: auto;
+
+        }
+
+        .content {
+            grid-area: content-1;
+            background-color: rgb(75, 44, 82);
+            width: 100%;
+
+
+
+        }
+
+
+        .footer {
+            grid-area: footer-1;
+            background-color: rgb(172, 161, 161);
+            height: 250px;
+
+        }
+
+
+        .logo{
+                width: 100px;
+                height: auto;
+        }
+
+        .mynav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .mynav ul li {
+            font-size: 20px;
+            color: white;
+            padding: 25px;
+        }
+
+        .mynav ul li:hover {
+            background-color: rgb(92, 54, 245);
+        }
+
+        .mynav ul li:hover {
+            color: rgb(248, 41, 41);
+        }
+
+        .mynav ul li a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+
+        .div-2 {
+            display: inline-block;
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .div-item {
+            margin: 10px 10px;
+            padding: 20px;
+            background-color: rgb(245, 251, 251);
+            width: 45%;
+            height: 250px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            display: flex;
+        }
+
+        .div-item img {
+            height: 150px;
+            width: 150px;
+            justify-content: center;
+            border-radius: 100%;
+
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+
+
+        .footer-item {
+            display: flex;
+            width: 100%;
+        }
+
+
+        .footer-item .footer-list {
+            margin: auto;
+            padding: 20px;
+        }
+
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "nav-bar nav-bar"
+                    "side-bar side-bar"
+                    "content-1 content-1"
+                    "content-1 content-1"
+                    "content-1 content-1"
+                    "content-1 content-1"
+                    "footer-1 footer-1";
+            }
+
+            .sidebar-1 {
+                width: 100%;
+            }
+
+            .div-item {
+                width: 100%;
+            }
+        }
+
+
+
+        
+
+        @media screen and (max-width: 480px) {
+            .container {
+                grid-template-areas:
+                    "nav-bar"
+                    "side-bar"
+                    "content-1"
+                    "content-1"
+                    "content-1"
+                    "content-1"
+                    "footer-1";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1 navbar">
+            <div class="mynav">
+               
+                <ul>
+                    <img src="/little-boy-doing-his-homework-library_23-2148694784.avif" alt="Logo" class="logo">
+                    <a href=""></a>
+                    <li class="a"><a href="">home</a></li>
+                    <li class="a"><a href="">aboutus</a></li>
+                    <li class="a"><a href="">service</a></li>
+                    <li class="a"><a href="">contactus</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="item1 sidebar-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vel praesentium quibusdam ab hic. Molestias
+                est mollitia ipsam? Similique quam inventore, soluta est dolor ea distinctio facilis commodi provident
+                sed perferendis exercitationem quis maxime magnam adipisci et modi fugiat ullam corrupti autem omnis
+                blanditiis? Laudantium tenetur vel eius vitae impedit nostrum, tempora expedita omnis eligendi ab animi
+                neque repellendus harum molestias assumenda! Quo, nihil vitae pariatur similique harum provident rerum
+                magni eaque asperiores iure, ad consequatur quod sint quidem officia! Sapiente eaque consequatur maiores
+                voluptates numquam aperiam explicabo? Deserunt culpa dicta sit eveniet incidunt fugit ad quos expedita
+                commodi unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi totam asperiores et cum
+                explicabo rerum suscipit quos fuga temporibus quas soluta autem quod veniam nostrum quaerat, nesciunt
+                libero? Rem nobis eum ducimus pariatur excepturi voluptatem deserunt tempora voluptates autem,
+                recusandae obcaecati. Soluta veritatis minus minima est modi maxime consequuntur quae totam ad? Et alias
+                vero voluptatem mollitia error aliquid doloribus, nam amet autem ab. Neque facilis odit, repellendus
+                maiores hic iusto dolorem similique veritatis error voluptatibus ratione voluptatem dicta natus unde
+                facere magni reprehenderit earum obcaecati. Illo, possimus sequi? Totam ducimus, quaerat officia error
+                illum nesciunt omnis impedit distinctio alias velit obcaecati, reprehenderit adipisci temporibus optio
+                molestias maiores aut quae recusandae enim. Numquam odit itaque commodi odio praesentium culpa
+                cupiditate aut labore et aperiam! Quia eligendi aperiam ullam veniam saepe, libero eaque aut quasi eius
+                iste repellendus distinctio incidunt autem exercitationem, veritatis sint sit delectus unde animi. Ipsam
+                et dolorem, cumque fugit maiores omnis nam nesciunt? Voluptatem dolores autem iusto voluptatum harum!
+                Quas, recusandae quibusdam! Voluptate at harum vero autem suscipit sint, enim eaque eius quod veritatis
+                assumenda dicta nam, quisquam temporibus quas provident cumque quasi nesciunt nulla labore voluptatum
+                maiores commodi. Architecto numquam tempore cum tempora dolores error veniam?</p>
+        </div>
+
+
+
+        <div class="content ccc">
+            <div class="div-2">
+                <div class="div-item">
+                    <h3>my first heading</h3>
+                    <img src="/bored-sad-girl-doing-homework-home_329181-18962.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, labore?</p>
+                </div>
+                <div class="div-item">
+                    <h3>Mahendra</h3>
+                    <img src="/images.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur consectetur!</p>
+                </div>
+                <div class="div-item">
+                    <h3>my first heading</h3>
+                    <img src="/istockphoto-1402700277-170667a.webp" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisi
+                        sint. Odit autem ipsa quas?</p>
+                </div>
+                <div class="div-item">
+                    <h3>my second heading</h3>
+                    <img src="/kid-coloring-hand-studio_23-2147851814.avif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisiur!</p>
+                </div>
+                <div class="div-item">
+                    <h3>my first heading</h3>
+                    <img src="/little-boy-doing-his-homework-library_23-2148694784.avif" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicingsa quas?</p>
+                </div>
+                <div class="div-item">
+                    <h3>my second heading</h3>
+                    <img src="/bored-sad-girl-doing-homework-home_329181-18962.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetere sunt illo beatae eaque
+                        aspernatur odit, rem perferendis illum consectetur!</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="item1 footer">
+            <div class="footer-item">
+                <div class="footer-list">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, possimus exercitationem commodi
+                        fuga, obcaecati autem animi eos facilis molestiae, vitae delectus sequi ducimus inventore a vero
+                        repellendus recusandae aut in.</p>
+                </div>
+                <div class="footer-list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eius dolorem
+                    quia laudantium optio nulla ducimus ratione, quis consectetur error! Ea rem nisi quasi velit illo.
+                    Minus dignissimos iure accusamus.</div>
+                <div class="footer-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odit
+                    voluptatibus nam accusamus iure hic illum necessitatibus. Officiis error quos voluptates sequi, ea
+                    alias commodi temporibus quaerat maxime qui libero?</div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
